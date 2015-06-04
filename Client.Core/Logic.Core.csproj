@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21FE8854-0EFC-4C58-81A4-FBAEBE1AD74E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Logic.Core</RootNamespace>
+    <AssemblyName>Logic.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dynamic\AssaultModeTank.cs" />
+    <Compile Include="Multiaspect\Attempt1\AirUnit.cs" />
+    <Compile Include="Multiaspect\Attempt1\AntiAircraftUnit.cs" />
+    <Compile Include="Multiaspect\Attempt1\AntiGroundUnit.cs" />
+    <Compile Include="Multiaspect\Attempt1\AttackingUnit.cs" />
+    <Compile Include="Multiaspect\Attempt1\LandUnit.cs" />
+    <Compile Include="Multiaspect\Attempt1\MovingUnit.cs" />
+    <Compile Include="Multiaspect\Attempt1\Unit.cs" />
+    <Compile Include="Multiaspect\Attempt2\CitizenshipStatus.cs" />
+    <Compile Include="Multiaspect\Attempt2\Female.cs" />
+    <Compile Include="Multiaspect\Attempt2\Foreigner.cs" />
+    <Compile Include="Multiaspect\Attempt2\Gender.cs" />
+    <Compile Include="Multiaspect\Attempt2\Male.cs" />
+    <Compile Include="Multiaspect\Attempt2\Person.cs" />
+    <Compile Include="Multiaspect\Attempt2\User.cs" />
+    <Compile Include="MultInheritanceAbstractPolymorphism\IProtoss.cs" />
+    <Compile Include="MultInheritanceAbstractPolymorphism\IProtossUnit.cs" />
+    <Compile Include="Overlapping\Client.cs" />
+    <Compile Include="Overlapping\HealthInsurance.cs" />
+    <Compile Include="Overlapping\Insurance.cs" />
+    <Compile Include="Overlapping\IncomeProtectionInsurance.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MultInheritanceAbstractPolymorphism\ProtossUnit.cs" />
+    <Compile Include="Dynamic\SiegeModeTank.cs" />
+    <Compile Include="Dynamic\Tank.cs" />
+    <Compile Include="Dynamic\TankMode.cs" />
+    <Compile Include="MultInheritanceAbstractPolymorphism\TerranUnit.cs" />
+    <Compile Include="MultInheritanceAbstractPolymorphism\Unit.cs" />
+    <Compile Include="MultInheritanceAbstractPolymorphism\XelNaga.cs" />
+    <Compile Include="MultInheritanceAbstractPolymorphism\ZergUnit.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
